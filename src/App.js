@@ -12,7 +12,7 @@ function App() {
   useEffect(() => {
       const consultarAPI = async() => {
           const imagenesPorPagina = 30;
-          const key = '22504627-b612b27ada69a75193bb22664';
+          const key = 'your API https://pixabay.com/';
           const url = `https://pixabay.com/api/?key=${key}&q=${busqueda}&per_page=${imagenesPorPagina}&page=${paginaactual}`;
 
           const respuesta = await fetch( url );
