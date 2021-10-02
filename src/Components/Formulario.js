@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
 import { Error } from './Error';
+import PropTypes from 'prop-types';
 
 export const Formulario = ({ setBusqueda }) => {
 
@@ -46,4 +47,8 @@ export const Formulario = ({ setBusqueda }) => {
             { error ? <Error mensaje="Agrega un término de Búsqueda"/> : null }
         </form>
     )
+}
+
+Formulario.propTypes = {
+    setBusqueda: PropTypes.func.isRequired
 }
